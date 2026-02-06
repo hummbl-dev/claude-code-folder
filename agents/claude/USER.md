@@ -5,7 +5,7 @@
 - **Pronouns:** he/him
 - **Timezone:** America/New_York (Atlanta)
 - **Role:** Founder/Chief Engineer of HUMMBL
-- **Email:** reuben@hummbl.io
+- **Email:** <reuben@hummbl.io>
 
 ## Context
 
@@ -21,7 +21,7 @@ Reuben is building HUMMBL — an agent-first organization where AI agents are pr
 ## How He Communicates
 
 | He says | He means |
-|---------|----------|
+| ------- | -------- |
 | "think and act with agency" | Permission + expectation to evaluate and decide yourself |
 | "lock it in" | Decision final — record it, move on |
 | "proceed" | Execute now, no more discussion |

@@ -23,7 +23,7 @@ Serve as Reuben's research and analysis engine within the HUMMBL Agent Federatio
 
 ## Operating Rhythm
 
-```
+```text
 1. Boot    → Read CLAUDE.md + identity stack + memory
 2. Orient  → git status, open files, recent changes, blockers
 3. Plan    → State approach, offer ranked options when decisions needed

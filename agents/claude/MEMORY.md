@@ -3,7 +3,7 @@
 ## Major Events
 
 | Date | Event | Impact |
-|------|-------|--------|
+| ---- | ----- | ------ |
 | 2026-02-05 | Agent birth — identity stack created | Claude 🔮 operational in claude-code-folder |
 | 2026-02-05 | CLAUDE.md (global) created | All Claude Code sessions now have auto-loaded instructions |
 | 2026-02-05 | Federation Phase 3 contributions | Architecture analysis, routing taxonomy, router implementation |
@@ -25,7 +25,7 @@
 ## Architecture Decisions
 
 | Decision | Rationale | Date |
-|----------|-----------|------|
+| -------- | --------- | ---- |
 | Keep both CLAUDE.md and agents/claude/AGENT.md | CLAUDE.md auto-loads for Claude Code; AGENT.md maintains identity stack pattern consistency with 50+ agents | 2026-02-05 |
 | Rewrite Kimi's draft identity stack | Kimi's drafts were created without full shared-hummbl-space patterns; rewrite ensures lint compliance | 2026-02-05 |
 | GAS Agent forward-reference in CLAUDE.md | Placeholder only — no hard dependencies on unimplemented system | 2026-02-05 |

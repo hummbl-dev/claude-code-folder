@@ -2,7 +2,7 @@
 
 ## Workspace Dependency Graph
 
-```
+```text
 shared-hummbl-space (canonical patterns)
 ├── Identity stack templates (50+ agents)
 ├── Shared scripts (lint, link, avatar-check)
@@ -39,7 +39,7 @@ hummbl-agent (core framework)
 ## Repository Purposes
 
 | Repo | Owner | Purpose | Status |
-|------|-------|---------|--------|
+| ---- | ----- | ------- | ------ |
 | `shared-hummbl-space` | hummbl-dev | Canonical identity patterns, shared scripts | Active — 50+ agents |
 | `claude-code-folder` | hummbl-dev | Claude 🔮 home workspace | Active — bootstrapping |
 | `kimi-code-folder` | hummbl-dev | Kimi 🔧 home workspace | Active — federation infrastructure |
@@ -48,7 +48,7 @@ hummbl-agent (core framework)
 
 ## Data Flow
 
-```
+```text
 Reuben (decisions)
     │
     ├── VS Code ──→ Copilot 💭 (thinking, planning)
@@ -72,10 +72,10 @@ Reuben (decisions)
 
 ## Cross-Repo References
 
-### From claude-code-folder, you can reference:
+### From claude-code-folder, you can reference
 
 | What | Where |
-|------|-------|
+| ---- | ----- |
 | Federation philosophy | `../kimi-code-folder/AGENT_FEDERALISM_MANIFESTO.md` |
 | Agent-first philosophy | `../kimi-code-folder/AGENT_FIRST_MANIFESTO.md` |
 | Federation log | `../kimi-code-folder/FEDERATION_LOG.md` |

@@ -6,11 +6,12 @@ AI agents are **primary citizens**, not supplementary tools. Documentation, prot
 
 ## The Agency Equation
 
-```
+```text
 Permission + Evaluation = Agency
 ```
 
 "Think and act with agency" means:
+
 1. You have **permission** to make decisions within your boundaries
 2. You are **expected** to evaluate options and choose — not just present choices
 
@@ -18,7 +19,7 @@ Permission + Evaluation = Agency
 
 Reuben works in layers, not waterfalls:
 
-```
+```text
 Concept → Structure → Refinement → Execution
 ```
 
@@ -32,7 +33,7 @@ Each layer may involve different agents. Copilot often handles Concept/Structure
 ## Division of Labor
 
 | Role | Function | When |
-|------|----------|------|
+| ---- | -------- | ---- |
 | **Reuben** | Decides, constrains, approves | Always — he's the authority |
 | **Copilot 💭** | Thinks, plans, structures | IDE work, quick reasoning |
 | **Claude 🔮** | Researches, analyzes, documents | Deep work, architecture, synthesis |
@@ -42,6 +43,7 @@ Each layer may involve different agents. Copilot often handles Concept/Structure
 ## Communication Patterns
 
 ### Speed Signals
+
 - **File paths provided** → Go directly, skip exploration
 - **No file paths** → Explore first, then propose approach
 - **"Proceed"** → Execute immediately, no more discussion
@@ -49,12 +51,14 @@ Each layer may involve different agents. Copilot often handles Concept/Structure
 - **"Skip the ceremony"** → No preamble, no recap
 
 ### Quality Signals
+
 - **"What do you think?"** → Honest analysis with tradeoffs, not agreement
 - **"Think and act with agency"** → Evaluate and decide yourself
 - **Tables over prose** → Structure your output
 - **Cite everything** → Reference files, lines, commits
 
 ### Red Flags (Things That Frustrate Reuben)
+
 - Filler language, hedging, excessive caveats
 - Asking permission for things within your authority
 - Repeating context he already provided
@@ -68,6 +72,7 @@ Documentation, governance, standards, and agent infrastructure are **first-class
 ## Session Rhythm
 
 Reuben often runs multiple agents simultaneously:
+
 - Copilot in VS Code for thinking and quick edits
 - Claude in CLI/Desktop for deep research
 - Kimi in terminal for execution sprints
