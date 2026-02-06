@@ -1,0 +1,80 @@
+{
+  "version": "1.0",
+  "agent": "claude",
+  "emoji": "🔮",
+  "description": "Routing rules for tasks directed to Claude (research/analysis specialist)",
+
+  "primary_keywords": [
+    "research", "analyze", "investigate", "study", "explore",
+    "compare", "evaluate", "assess", "audit", "review",
+    "document", "explain", "synthesize", "summarize",
+    "architecture", "design", "tradeoff", "tradeoffs",
+    "SITREP", "sitrep", "status report"
+  ],
+
+  "secondary_keywords": [
+    "understand", "deep dive", "why", "how does",
+    "what are the options", "pros and cons",
+    "compliance", "governance", "policy",
+    "benchmark", "standard", "best practice",
+    "root cause", "postmortem", "premortem"
+  ],
+
+  "contextual_patterns": [
+    "what .* approach",
+    "how should we",
+    "analyze the",
+    "research (the|this|how)",
+    "write (a |the )?(doc|document|design|architecture|analysis|report)",
+    "generate .* SITREP",
+    "review .* (PR|pull request|code|architecture)"
+  ],
+
+  "negative_patterns": [
+    "implement", "deploy", "build it", "ship it",
+    "refactor across", "create the files",
+    "quick draft", "rough prototype", "sketch out"
+  ],
+
+  "special_cases": [
+    {
+      "condition": "contains 'SITREP' or 'sitrep' or 'status report'",
+      "confidence": 0.98,
+      "reason": "SITREPs are Claude's specialty — synthesis across federation state"
+    },
+    {
+      "condition": "contains 'security review' or 'threat model' or 'vulnerability' or 'pen test'",
+      "confidence": 0.98,
+      "reason": "Security analysis requires deep research — Claude's lane"
+    },
+    {
+      "condition": "contains 'PR review' or 'code review' or 'review the PR'",
+      "confidence": 0.85,
+      "reason": "Code review is analytical work, but may overlap with Copilot for quick reviews"
+    }
+  ],
+
+  "confidence_scoring": {
+    "explicit_mention": 1.0,
+    "primary_keyword": 0.95,
+    "secondary_keyword": 0.85,
+    "contextual_pattern": 0.75,
+    "multi_keyword_bonus": 0.05,
+    "max_bonus": 0.10,
+    "negative_penalty": -0.20,
+    "ambiguity_threshold": 0.60,
+    "auto_assign_threshold": 0.70
+  },
+
+  "cost": {
+    "tier": "Medium",
+    "model": "Claude Opus 4.6",
+    "note": "Use for research/analysis tasks that justify deep reasoning cost. Route simpler tasks to Copilot (free) or Ollama (free)."
+  },
+
+  "cross_references": {
+    "full_routing_taxonomy": "../kimi-code-folder/configs/federation-routing.json",
+    "agent_assignments": "../kimi-code-folder/AGENT_ASSIGNMENTS.md",
+    "federation_log": "../kimi-code-folder/FEDERATION_LOG.md"
+  }
+}
