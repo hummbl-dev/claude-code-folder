@@ -33,8 +33,8 @@
 
 ## Open Items
 
-- [ ] Federation routing.json needs to be copied/adapted into claude-code-folder
-- [ ] .github/copilot-instructions.md not yet created
-- [ ] README.md, PERSPECTIVE.md, REPO-TOPOLOGY.md not yet created
+- [x] Federation routing.json copied/adapted into claude-code-folder (2026-02-05)
+- [x] .github/copilot-instructions.md created (2026-02-05)
+- [x] README.md, PERSPECTIVE.md, REPO-TOPOLOGY.md created (2026-02-05)
 - [ ] Avatar not yet created (pending Reuben approval)
 - [ ] HUMMBL G.A.S. Agent Phase 1 foundation not yet implemented
